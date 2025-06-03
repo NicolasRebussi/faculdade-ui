@@ -5,6 +5,6 @@ export class Aluno {
   status?: boolean;
   datacriacao?: Date;
   dataalteracao?: Date;
-  usucriacao?: string;
-  usualteracao?: string;
+  usuariocriacao?: string;
+  usuarioalteracao?: string;
 }

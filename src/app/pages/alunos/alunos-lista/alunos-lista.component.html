@@ -16,11 +16,30 @@
     </ng-template>
     <ng-template pTemplate="body" let-aluno>
       <tr>
-        <td>
+        
+        <!-- edit button -->
+      <!--   <td>
           <button pButton type="button" class="p-button-rounded p-button-primary"
             ptooltip="Editar" icon="pi pi-pencil" tooltipPosition="top" 
             [routerLink]="['/alunos', aluno.idaluno]"></button>
+
+
+            erro no routerLink o correto é  [routerLink]="['/alunos/editar', aluno.idaluno]"
+        </td> -->
+ <td>
+          <button 
+            pButton 
+            type="button" 
+            class="p-button-rounded p-button-primary"
+            ptooltip="Editar" 
+            icon="pi pi-pencil" 
+            tooltipPosition="top" 
+            [routerLink]="['/alunos/editar', aluno.idaluno]">
+          </button>
         </td>
+
+
+
         <td>{{ aluno.nome }}</td>
         <td>{{ aluno.status && 'Ativo' || 'Inativo' }}</td>
         <td>{{ aluno.datacriacao | date : 'dd/MM/yyyy' }}</td>
