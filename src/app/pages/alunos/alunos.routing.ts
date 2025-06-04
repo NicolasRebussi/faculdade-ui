@@ -6,7 +6,7 @@ import { AlunosCadastroComponent } from "./alunos-cadastro/alunos-cadastro.compo
 const routes: Routes = [
   { path: '', component: AlunosListaComponent }, // Rota padrão → lista de alunos
   { path: 'novo', component: AlunosCadastroComponent }, // /alunos/novo → formulário de criação
-  { path: 'editar/:idaluno', component: AlunosCadastroComponent } // /alunos/editar/1 → edição de aluno
+  { path: 'editar/:id', component: AlunosCadastroComponent } // /alunos/editar/1 → edição de aluno
 ];
 
 @NgModule({
